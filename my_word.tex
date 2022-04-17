@@ -1,0 +1,64 @@
+%!TEX program = xelatex
+% 完整编译: xelatex -> bibtex -> xelatex -> xelatex
+\documentclass[lang=cn,11pt,a4paper,cite=authoryear]{elegantpaper}
+
+\title{机器学习KNN分类器作业}
+\author{李皓\hspace{10pt}2020080903009}
+\institute{电子科技大学计算机学院}
+
+\date{\zhtoday}
+% 
+
+% 本文档命令
+\usepackage{array}
+\usepackage{graphicx}
+\usepackage{caption}
+% 生成大图的标题包
+\usepackage{subfigure}
+% 生成子图的包
+\usepackage{xcolor}     %高亮使用的颜色
+
+\definecolor{commentcolor}{RGB}{85,139,78}
+
+\definecolor{stringcolor}{RGB}{206,145,108}
+
+\definecolor{keywordcolor}{RGB}{34,34,250}
+
+\definecolor{backcolor}{RGB}{220,220,220}
+
+\usepackage{accsupp}    
+
+\newcommand{\emptyaccsupp}[1]{\BeginAccSupp{ActualText={}}#1\EndAccSupp{}}
+
+\usepackage{listings}
+
+\lstset{language=python,                    %Python语法高亮
+    linewidth=0.9\linewidth,            %列表list宽度
+    %basicstyle=\ttfamily,              %tt无法显示空格
+    commentstyle=\color{commentcolor},  %注释颜色
+    keywordstyle=\color{keywordcolor},  %关键词颜色
+    stringstyle=\color{stringcolor},    %字符串颜色
+    %showspaces=true,                   %显示空格
+    numbers=left,                       %行数显示在左侧
+    numberstyle=\tiny\emptyaccsupp,     %行数数字格式
+    numbersep=5pt,                      %数字间隔
+    frame=single,                       %加框
+    framerule=0pt,                      %不划线
+    escapeinside=@@,                    %逃逸标志
+    emptylines=1,                       %
+    xleftmargin=0em,                    %list左边距
+    % backgroundcolor=\color{backcolor},  %列表背景色
+    tabsize=4,                          %制表符长度为4个字符
+    gobble=4                            %忽略每行代码前4个字符
+    }
+\newcommand{\ccr}[1]{\makecell{{\color{#1}\rule{1cm}{1cm}}}}
+
+\begin{document}
+
+\maketitle
+
+    % 在此处添加正文内容
+    \newpage
+    \section{附录}
+
+\end{document}
